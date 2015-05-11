@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: SpotSkim API Reference
 
 language_tabs:
   - shell
