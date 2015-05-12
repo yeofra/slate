@@ -2,107 +2,39 @@
 title: SpotSkim API Reference
 
 language_tabs:
-  - shell
-  - ruby
   - python
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - authentication
+  - userdetails
+  - userhistory
+  - useredit
+  - versioning
   - errors
 
 search: true
 ---
+# Introduction
+All SpotSkim APIs return JSON data objects for developers to parse. This is the preferred encoding and decoding method supported. Unless otherwise specified the `content-type` must be set to `application/json`
 
-# No Introduction
+SpotSkim currently supports two types of APIs. They are tailored for the following use cases
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+###[Web API](#web-api)
+Typical users of this API would be partners that are integrating with SpotSkim from their own portals. Functionality such as "Add a Location", or "Add a User" are supported. Eventual goal of this API is to provide our partners all the API functionality that is used by SpotSkim Portal to build a custom portal if they so choose.  
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+###[Phone API](#phone-api)
+Typical users of this API, are partners that are trying to support SpotSkim on devices that are not supported out of the box. For example, you could be writing custom software to support Windows CE Devices in stores. 
+This API is exactly the same API that is used by the SpotSkim Application, so any future changes will be documented and available to our partners as well
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Most of the functionality supported by the APIs are authenticated. You will need to either perform `Login` using the API itself and store the token, or alternatively use your console to [obtain the API token](#obtaining-tokens)
 
-# Authentication
+If a call is authenticated, you must make sure to set the `Authorization` header to `ApiKey user@spotskim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8`
 
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Isis",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
+More generically the Authorization header must have the format 
+`ApiKey (space)username:(colon)API-key`
 
 ### HTTP Request
 
@@ -121,23 +53,11 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Kitten
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
 ```python
 import kittn
 
 api = kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/3"
-  -H "Authorization: meowmeowmeow"
 ```
 
 > The above command returns JSON structured like this:
