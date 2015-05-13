@@ -36,6 +36,10 @@ If a call is authenticated, you must make sure to set the `Authorization` header
 More generically the Authorization header must have the format 
 `ApiKey (space)username:(colon)API-key`
 
+<aside class="success">
+  Ignore all kitten requests
+</aside>
+
 ### HTTP Request
 
 `GET http://example.com/kittens`
