@@ -144,7 +144,7 @@ response = request.post(url, data=json.dumps(parameters))
 
 ### HTTP Request
 
-`POST http://dev.spotskim.com/api/phone/2_1/accounts/login/`
+`POST http://dev.spotskim.com/api/phone/2_5/accounts/login/`
 
 ### Parameters and types
 Parameters | Types

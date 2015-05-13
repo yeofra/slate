@@ -11,11 +11,10 @@ response = request.get(url, headers)
 {
     "training_url": "pre_signed_S3_url.mp4"
 }
-
 ```
 
 ### HTTP Method
-`GET https://dev.spotskim.com/api/phone/2_1/accounts/users/1/training/`
+`GET https://dev.spotskim.com/api/phone/2_5/accounts/users/1/training/`
 
 ### Parameters
 None

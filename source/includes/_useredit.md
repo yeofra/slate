@@ -147,7 +147,7 @@ response = request.patch(url, parameters, headers)
 ```
 
 ### HTTP Method
-`PATCH https://dev.spotskim.com/api/phone/2_1/accounts/users/1/`
+`PATCH https://dev.spotskim.com/api/phone/2_5/accounts/users/1/`
 
 ### Parameters
 Parameter | Required | Description
