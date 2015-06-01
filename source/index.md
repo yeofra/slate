@@ -12,6 +12,7 @@ includes:
   - userdetails
   - userhistory
   - useredit
+  - listlocations
   - versioning
   - errors
 
