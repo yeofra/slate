@@ -15,7 +15,7 @@ response = request.get(url, headers)
 ```
 
 ### HTTP Method
-`GET https://dev.spotskim.com/api/phone/2_1/accounts/users/1/policy/`
+`GET https://dev.spotskim.com/api/phone/2_5/accounts/users/1/policy/`
 
 ### Parameters
 None
