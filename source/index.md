@@ -20,6 +20,7 @@ includes:
   - createasset
   - assetdetails
   - assetpatch
+  - assetrequestmaintenance
   - checkin
   - versioning
   - errors
