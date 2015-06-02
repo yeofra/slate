@@ -18,6 +18,7 @@ includes:
   - locationbycoordinates
   - locationdetails
   - createasset
+  - assetdetails
   - checkin
   - versioning
   - errors
