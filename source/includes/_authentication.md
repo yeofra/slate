@@ -8,7 +8,7 @@ parameters = {'username': 'user@spotskim.com', 'password': 'secret'}
 response = request.post(url, data=json.dumps(parameters))
 ```
 
-> Make sure to replace `username`  and `password` with your username and password. The above command returns a JSON structure like this
+> Make sure to replace `username`  and `password` with your username and password. The above command returns a JSON structure like this:
 
 ```json
 {

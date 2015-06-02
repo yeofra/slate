@@ -1,12 +1,14 @@
 # User History
+> To get the user history, use this code:
+
 ```python
 import requests
 url = 'https://dev.spotskim.com/api/phone/2_5/accounts/users/1/history/'
-headers = {'Authorization': '204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
+headers = {'Authorization': 'ApiKey user@spotksim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
 response = request.get(url, headers)
 ```
 
-> The above command returns JSON structured like this 
+> The above command returns JSON structured like this:
 
 ```json
 [
@@ -57,7 +59,7 @@ None
 ### Headers
 Header | Value
 ------ | -----
-authorization | ApiKey info@inspectpos.com:50f69f0..
+Authorization | ApiKey info@inspectpos.com:50f69f0..
 
 ### Notes
 1. This returns both Web-Inspection and App-Inspection history for the user. 

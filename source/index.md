@@ -11,6 +11,8 @@ includes:
   - authentication
   - userdetails
   - userhistory
+  - usertraining
+  - userpolicy
   - useredit
   - listlocations
   - versioning

@@ -1,4 +1,6 @@
 # Locations List
+> To get the list of nearby locations, use this code:
+
 ```python
 import requests
 url = 'https://dev.spotskim.com/api/phone/2_5/locations/'
@@ -7,11 +9,11 @@ parameters = {
     'near_longitude': '-87.6647797',
     'distance' : '200'
 }
-headers = {'Authorization': '204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
+headers = {'Authorization': 'ApiKey user@spotksim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
 response = request.get(url, parameters, headers)
 ```
 
-> The above command returns JSON structured like this 
+> The above command returns JSON structured like this:
 
 ```json
 {
@@ -67,19 +69,19 @@ response = request.get(url, parameters, headers)
 ```
 
 ### HTTP Request
-`GET https://dev.spotskim.com/2_5/locations/`
+`GET https://dev.spotskim.com/api/phone/2_5/locations/`
 
 ### Query Parameters
 Parameter | Required | Value
 --------  | -------- | -----
-near_latitude | Y    | latitude for the reference point
-near_longitude| Y    | longitude for the reference point
-distance      | N    | radius in which to search for locations
+near_latitude | Yes    | latitude for the reference point
+near_longitude| Yes    | longitude for the reference point
+distance      | No    | radius in which to search for locations
 
 ### Headers
 Header | Value
 ------ | -----
-authorization | ApiKey info@inspectpos.com:50f69f0..
+Authorization | ApiKey info@inspectpos.com:50f69f0..
 
 ### Notes
 1. Results are always ordered by distance from the reference point, if `near_longitude`, and `near_longitude` are present and valid 

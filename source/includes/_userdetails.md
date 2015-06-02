@@ -1,8 +1,10 @@
 # User Details
+> To get the user details, use this code:
+
 ```python
 import requests
 url = 'https://dev.spotskim.com/api/phone/2_5/accounts/users/1/'
-headers = {'Authorization': '204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
+headers = {'Authorization': 'ApiKey user@spotksim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
 response = request.get(url, headers)
 ```
 
@@ -149,7 +151,7 @@ None
 ### Headers
 Header | Value
 ------ | -----
-authorization | ApiKey info@inspectpos.com:50f69f0..
+Authorization | ApiKey info@inspectpos.com:50f69f0..
 
 ### Notes
 1. The response is exactly the same as the login call, however this call is authenticated

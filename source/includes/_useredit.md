@@ -1,8 +1,10 @@
 # Modify User
+> To modify the user details, use this code:
+
 ```python
 import requests
 url = 'https://dev.spotskim.com/api/phone/2_5/accounts/users/1/'
-headers = {'Authorization': '204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
+headers = {'Authorization': 'ApiKey user@spotksim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
 parameters = {
     "training_complete": "True", 
     "policy_complete": "True", 
@@ -12,7 +14,7 @@ parameters = {
 }
 response = request.patch(url, parameters, headers)
 ```
-> The above command returns JSON structured like this 
+> The above command returns JSON structured like this:
 > 
 
 ```json
@@ -146,7 +148,7 @@ response = request.patch(url, parameters, headers)
 
 ```
 
-### HTTP Method
+### HTTP Request
 `PATCH https://dev.spotskim.com/api/phone/2_5/accounts/users/1/`
 
 ### Parameters
@@ -173,4 +175,7 @@ Return Value | Meaning
 ### Headers
 Header | Value
 ------ | -----
-authorization | ApiKey info@inspectpos.com:50f69f0..
+Authorization | ApiKey info@inspectpos.com:50f69f0..
+<aside class="warning">
+If the authorization value does not match with the user id, the API will return code 401
+</aside>
