@@ -21,6 +21,7 @@ includes:
   - assetdetails
   - assetpatch
   - assetrequestmaintenance
+  - assetcompletemaintenance
   - checkin
   - versioning
   - errors
