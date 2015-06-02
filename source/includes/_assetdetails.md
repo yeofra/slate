@@ -5,7 +5,7 @@
 import requests
 url = 'https://dev.spotskim.com/api/phone/2_5/assets/102345678/'
 headers = {'Authorization': 'ApiKey user@spotksim.com:204db7bcfafb2deb7506b89eb3b9b715b09905c8'}
-response = request.post(url, headers)
+response = request.get(url, headers)
 ```
 
 > The above command returns a JSON structure like this:
@@ -94,7 +94,7 @@ response = request.post(url, headers)
 ```
 
 ### HTTP Request
-`POST https://dev.spotskim.com/api/phone/2_5/assets/102345678/`
+`GET https://dev.spotskim.com/api/phone/2_5/assets/102345678/`
 
 <aside class="success">
 Make sure to replace the corresponding asset tag in the url (.../assets/{tag here}/)
