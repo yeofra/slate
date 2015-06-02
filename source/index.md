@@ -19,6 +19,7 @@ includes:
   - locationdetails
   - createasset
   - assetdetails
+  - assetpatch
   - checkin
   - versioning
   - errors
