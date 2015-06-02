@@ -15,6 +15,7 @@ includes:
   - userpolicy
   - useredit
   - listlocations
+  - locationbycoordinates
   - locationdetails
   - checkin
   - versioning
