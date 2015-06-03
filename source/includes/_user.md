@@ -16,39 +16,11 @@ response = request.get(url, headers)
 {
     "asset_types": [
         {
-            "description": "A Credit card terminal, also known as a Payment Terminal or EFTPOS Terminal. Terminals allow for swipe, dip, of credit cards. This includes dial-up terminals as well as Multi-Lane terminals, such as the ones connected to Cash Register via a cable.",
-            "id": 44,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/terminal.png?Signature=QCg%2FayL8kLiQ3eNCD%2BwLFqGuYWs%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "Terminal",
-            "order": 0
-        },
-        {
-            "description": "An externally attached card reader, such as the ones on a keyboard, externally mounted to Point-Of-Sale systems, or readers that are plugged in on an as-needed basis to PCs.",
-            "id": 45,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/keyboard.png?Signature=Te%2BxrGFf4ZLrVxejdperxTu%2B214%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "External Card Reader",
-            "order": 1
-        },
-        {
             "description": "Card processing kiosks such as ones used for ticket vending machines, food kiosks, receipt lookup kiosks, etc.,",
             "id": 46,
             "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/kiosk.png?Signature=loySLj2u%2F6jEXDP6GgVtEC9FH%2Bw%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
             "name": "Kiosk",
             "order": 2
-        },
-        {
-            "description": "Unattended Fuel Dispenser with an integrated card reader.",
-            "id": 47,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/gas_pump.png?Signature=DVPAJsmoXvCHQdi8IKqREyke%2Fn0%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "Gas Pump",
-            "order": 3
-        },
-        {
-            "description": "ATM (Automated Teller Machine) allows customers access basic bank services, such as making deposits and cash withdrawals from remote locations, twenty-four hours a day.",
-            "id": 89,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/atm_final2.png?Signature=TQn851wpoBZ1W0RAcuwp1Q4gad0%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "ATM",
-            "order": 4
         },
         {
             "description": "A Clover POS system terminal. The integrated physical security on the device simplifies the inspection process to one view and question.",
@@ -199,20 +171,6 @@ response = request.get(url, headers)
         "current_device_status": "not_in_use",
         "datetime_inspected": "2015-04-22T00:43:05",
         "id": 820
-    },
-    {
-        "asset_tag": "012345678",
-        "checkin_thumbnail": null,
-        "current_device_status": "in_use",
-        "datetime_inspected": "2015-04-21T15:46:12",
-        "id": 814
-    },
-    {
-        "asset_tag": "00124E16A6BD",
-        "checkin_thumbnail": "https://spotskim-dev-images.s3.amazonaws.com/info%40inspectpos.com/2015-04-16-13/00124E16A6BD/450903140vumvd.jpg_thumb.jpg?Signature=iLSr7bxe%2Fgc4DF2aHzM6dm%2BFZkY%3D&Expires=1431474805&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-        "current_device_status": "in_use",
-        "datetime_inspected": "2015-04-16T18:52:28",
-        "id": 777
     }
 ]
 ```
@@ -340,13 +298,6 @@ response = request.patch(url, parameters, headers)
 {
     "asset_types": [
         {
-            "description": "A Credit card terminal, also known as a Payment Terminal or EFTPOS Terminal. Terminals allow for swipe, dip, of credit cards. This includes dial-up terminals as well as Multi-Lane terminals, such as the ones connected to Cash Register via a cable.",
-            "id": 44,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/terminal.png?Signature=QCg%2FayL8kLiQ3eNCD%2BwLFqGuYWs%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "Terminal",
-            "order": 0
-        },
-        {
             "description": "An externally attached card reader, such as the ones on a keyboard, externally mounted to Point-Of-Sale systems, or readers that are plugged in on an as-needed basis to PCs.",
             "id": 45,
             "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/keyboard.png?Signature=Te%2BxrGFf4ZLrVxejdperxTu%2B214%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
@@ -359,27 +310,6 @@ response = request.patch(url, parameters, headers)
             "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/kiosk.png?Signature=loySLj2u%2F6jEXDP6GgVtEC9FH%2Bw%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
             "name": "Kiosk",
             "order": 2
-        },
-        {
-            "description": "Unattended Fuel Dispenser with an integrated card reader.",
-            "id": 47,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/gas_pump.png?Signature=DVPAJsmoXvCHQdi8IKqREyke%2Fn0%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "Gas Pump",
-            "order": 3
-        },
-        {
-            "description": "ATM (Automated Teller Machine) allows customers access basic bank services, such as making deposits and cash withdrawals from remote locations, twenty-four hours a day.",
-            "id": 89,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/atm_final2.png?Signature=TQn851wpoBZ1W0RAcuwp1Q4gad0%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "ATM",
-            "order": 4
-        },
-        {
-            "description": "A Clover POS system terminal. The integrated physical security on the device simplifies the inspection process to one view and question.",
-            "id": 68,
-            "image": "https://spotskim-dev-thumbnails.s3.amazonaws.com/asset_primary_angles/Screen_Shot_2015-03-02_at_10.53.22_PM.png?Signature=Ly7%2BC0q49NKK9ZXGoP6dxbjZzKk%3D&Expires=1431473724&AWSAccessKeyId=AKIAIWXP3QT3ECK4SGFQ",
-            "name": "Clover Terminal",
-            "order": 5
         }
     ],
     "current_location": {
