@@ -19,6 +19,7 @@ includes:
   - locationdetails
   - sublocationdetails
   - sublocationpatch
+  - sublocations
   - createasset
   - assetdetails
   - assetpatch
