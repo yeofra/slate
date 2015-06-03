@@ -22,6 +22,7 @@ includes:
   - assetpatch
   - assetrequestmaintenance
   - assetcompletemaintenance
+  - assetflagascompromised
   - checkin
   - versioning
   - errors
