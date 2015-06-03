@@ -18,6 +18,7 @@ includes:
   - locationbycoordinates
   - locationdetails
   - sublocationdetails
+  - sublocationpatch
   - createasset
   - assetdetails
   - assetpatch
