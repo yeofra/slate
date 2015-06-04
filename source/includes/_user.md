@@ -246,7 +246,7 @@ response = request.get(url, headers)
 
 ```json
 {
-    "training_url": "pre_signed_S3_url.mp4"
+    "training_url": "https://spotskim-dev-static.s3.amazonaws.com/videos/training_video.mp4"
 }
 ```
 
